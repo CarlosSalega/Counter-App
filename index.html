@@ -4,17 +4,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./image/counter-app.svg">
         <link rel="stylesheet" href="index.css">
         <title>Counter App</title>
     </head>
     <body>
-        <h1>Counter App</h1>
-        <p class="counter-preview">0</p>
-        <div class="buttons" id="buttons">
-            <button class="decrement" id="decrement">Decrement</button>
-            <button class="reset" id="reset">Reset</button>
-            <button class="increment" id="increment">Increment</button>
+        <div class="toggle" id="toggle">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
         </div>
+        <div class="app-container">
+            <h1 class="title">Counter App</h1>
+            <p class="counter-preview">0</p>
+            <div class="buttons-container" id="buttons">
+                <button class="button" id="decrement">Decrement</button>
+                <button class="button" id="reset">Reset</button>
+                <button class="button" id="increment">Increment</button>
+            </div>
+        </div>
+        <p class="credits">Hecho con ♥ por Carlos Salega</p>
         <script src="index.js" />
     </body>
 </html>
